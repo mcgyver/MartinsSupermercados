@@ -1,5 +1,6 @@
 package com.caiofdomingues.martinssupermercados;
 
+import android.content.Intent;
 import android.support.design.widget.NavigationView;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
@@ -64,24 +65,34 @@ public class MainActivity extends AppCompatActivity {
 
                 switch (id){
                     case R.id.nav_home:
-                        //btnAddExpense.callOnClick();
                         drawerLayout.closeDrawers();
+                        Intent intent = new Intent(MainActivity.this, MainActivity.class);
+                        startActivity(intent);
                         break;
-                    case R.id.galeria:
-                        //signOut();
+                    case R.id.gallery:
                         drawerLayout.closeDrawers();
+                        Intent intentgal = new Intent(MainActivity.this, GaleriaActivity.class);
+                        startActivity(intentgal);
                         break;
                     case R.id.cart:
-                        drawerLayout.closeDrawers(); ;
-                        break;
-                    case R.id.contatos:
                         drawerLayout.closeDrawers();
+                        Intent intentcart = new Intent(MainActivity.this, CartActivity.class);
+                        startActivity(intentcart);
                         break;
-                    case R.id.localizacao:
+                    case R.id.contacts:
                         drawerLayout.closeDrawers();
+                        Intent intentcontacts = new Intent(MainActivity.this, ContactsActivity.class);
+                        startActivity(intentcontacts);
                         break;
-                    case R.id.sobreapp:
+                    case R.id.location:
                         drawerLayout.closeDrawers();
+                        Intent intentlocal = new Intent(MainActivity.this, LocalizacaoActivity.class);
+                        startActivity(intentlocal);
+                        break;
+                    case R.id.about_app:
+                        drawerLayout.closeDrawers();
+                        Intent intentaboutapp = new Intent(MainActivity.this, SobreAppActivity.class);
+                        startActivity(intentaboutapp);
                         break;
                     case R.id.nav_exit:
                         finish();

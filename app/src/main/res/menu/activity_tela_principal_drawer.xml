@@ -7,7 +7,7 @@
             android:icon="@drawable/ic_menu_home"
             android:title="Início" />
         <item
-            android:id="@+id/galeria"
+            android:id="@+id/gallery"
             android:icon="@drawable/ic_menu_gallery"
             android:title="Galeria de Fotos" />
         <item
@@ -15,15 +15,15 @@
             android:icon="@drawable/ic_menu_cart"
             android:title="Promoções" />
         <item
-            android:id="@+id/contatos"
+            android:id="@+id/contacts"
             android:icon="@drawable/ic_menu_contacts"
             android:title="Contatos" />
         <item
-            android:id="@+id/localizacao"
+            android:id="@+id/location"
             android:icon="@drawable/ic_menu_location"
             android:title="Localização" />
         <item
-            android:id="@+id/sobreapp"
+            android:id="@+id/about_app"
             android:icon="@drawable/ic_menu_about"
             android:title="Sobre o aplicativo..." />
         <item
