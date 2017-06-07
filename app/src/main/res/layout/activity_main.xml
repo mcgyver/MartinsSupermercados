@@ -26,7 +26,7 @@
 
         <!-- Primeira "camada", com o ImageView que vai ficar centrado ao fundo -->
         <ImageView
-            android:layout_width="504dp"
+            android:layout_width="match_parent"
             android:layout_height="180dp"
             android:layout_alignParentBottom="true"
             android:layout_alignParentRight="true"

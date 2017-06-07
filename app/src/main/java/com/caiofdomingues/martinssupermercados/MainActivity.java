@@ -86,7 +86,7 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case R.id.location:
                         drawerLayout.closeDrawers();
-                        Intent intentlocal = new Intent(MainActivity.this, LocalizacaoActivity.class);
+                        Intent intentlocal = new Intent(MainActivity.this, MapsActivity.class);
                         startActivity(intentlocal);
                         break;
                     case R.id.about_app:
