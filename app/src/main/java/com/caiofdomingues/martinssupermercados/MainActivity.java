@@ -15,7 +15,7 @@ import android.support.v7.app.ActionBarDrawerToggle;
 public class MainActivity extends AppCompatActivity {
 
     private EditText sobre;
-    private Button vamosla;
+
     private DrawerLayout drawerLayout;
     private Toolbar toolbar;
     private NavigationView navigationView;
@@ -26,11 +26,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         findViews();
-        SetActions();
     }
 
     private void findViews() {
-        vamosla = (Button) findViewById(R.id.button);
         toolbar = (Toolbar) findViewById(R.id.toolbar);
 
         //set up navigation drawer
@@ -44,14 +42,6 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    private void SetActions() {
-        vamosla.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
-        });
-    }
 
     // Initialize and add Listener to NavigationDrawer
     public void initNavigationDrawer(){
